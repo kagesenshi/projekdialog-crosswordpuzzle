@@ -60,9 +60,14 @@
 }
 
 #puzzle {
+    float:left;
     margin:0 auto;
+    margin-right: 3em;
 }
 #puzzle-clues {
+    float:left;
+
+    width: 50%;
 }
 
 #puzzle-clues li{

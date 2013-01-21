@@ -47,7 +47,7 @@ def application(environ, start_response):
             <html>
                 <head>
                     <meta http-equiv='refresh'
-          content="0;url='http://crossword.dev.inigo-tech.com/static/puzzle1.html'"/>
+          content="0;url='http://crossword.dev.inigo-tech.com/static/'"/>
                 </head>
             </html>
         """)
@@ -57,7 +57,7 @@ def application(environ, start_response):
         ('Content-Type', ctype), 
         ('Content-Length', str(len(response_body))),
         ('Refresh', 
-            '0; http://crossword.dev.inigo-tech.com/static/puzzle1.html')
+            '0; http://crossword.dev.inigo-tech.com/static/')
     ]
     #
     start_response(status, response_headers)

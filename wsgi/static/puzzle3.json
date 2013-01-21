@@ -1,0 +1,50 @@
+[
+  {
+    "startx": 1, 
+    "starty": 1, 
+    "orientation": "across", 
+    "clue": "A Hindu festival which held usually end of the year, when the deities placed on a chariot which is pulled through the streets by devotees", 
+    "answer": "rathayatra", 
+    "position": 1
+  }, 
+  {
+    "startx": 3, 
+    "starty": 1, 
+    "orientation": "down", 
+    "clue": "The keystone work of literature in Taoism (3 words)", 
+    "answer": "taoteching", 
+    "position": 2
+  }, 
+  {
+    "startx": 2, 
+    "starty": 3, 
+    "orientation": "across", 
+    "clue": "Sacred animal in Hinduism", 
+    "answer": "cow", 
+    "position": 3
+  }, 
+  {
+    "startx": 1, 
+    "starty": 7, 
+    "orientation": "across", 
+    "clue": "This religion was introduced to people of Malaya by a Persian couple in 1950 and includes Chinese, Eurasian, Indian and Indigenous communities", 
+    "answer": "baha'i", 
+    "position": 4
+  }, 
+  {
+    "startx": 6, 
+    "starty": 7, 
+    "orientation": "down", 
+    "clue": "One of the fastest growing religions in the world", 
+    "answer": "islam", 
+    "position": 5
+  }, 
+  {
+    "startx": 6, 
+    "starty": 8, 
+    "orientation": "across", 
+    "clue": "Malay local martial art", 
+    "answer": "silat", 
+    "position": 6
+  }
+]
