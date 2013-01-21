@@ -27,7 +27,7 @@ def application(environ, start_response):
         ctype='text/json'
         qs = urlparse.parse_qs(environ['QUERY_STRING'])
         if 'url' in qs and qs['url']:
-            data = json.loads(urllib.urlopen(qs['url'][0]))
+            data = json.loads(urllib.urlopen(qs['url'][0]).read())
             response_body = json.dumps(data)
         else:
             response_body = ''
