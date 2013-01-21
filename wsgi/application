@@ -24,22 +24,17 @@ def application(environ, start_response):
 		response_body = '\n'.join(response_body)
 	else:
 		ctype = 'text/html'
-		response_body = '''<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="Refresh"
-  content="0;url=http://crossword.dev.inigo-tech.com/static">
-</head>
-<body>
-</body>
-</html>''' 
+		response_body = open(
+            os.path.join(
+                os.path.basedir(__file__), 'static', 'index.html'
+            )
+        ).read()
 
 	status = '200 OK'
 	response_headers = [
         ('Content-Type', ctype), 
-        ('Content-Length', str(len(response_body))),
-        ('Refresh' , '0; url=http://crossword.dev.inigo-tech.com/static')]
+        ('Content-Length', str(len(response_body)))
+    ]
 	#
 	start_response(status, response_headers)
 	return [response_body]
