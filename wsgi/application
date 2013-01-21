@@ -26,7 +26,7 @@ def application(environ, start_response):
 		ctype = 'text/html'
 		response_body = open(
             os.path.join(
-                os.path.basedir(__file__), 'static', 'index.html'
+                os.path.dirname(__file__), 'static', 'index.html'
             )
         ).read()
 
