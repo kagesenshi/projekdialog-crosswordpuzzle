@@ -23,31 +23,41 @@ def application(environ, start_response):
     	response_body = ['%s: %s' % (key, value)
                     for key, value in sorted(environ.items())]
     	response_body = '\n'.join(response_body)
-    elif environ['PATH_INFO'] == '/puzzle.json':
-        ctype='text/json'
-        qs = urlparse.parse_qs(environ['QUERY_STRING'])
-        if 'url' in qs and qs['url']:
-            data = json.loads(urllib.urlopen(qs['url'][0]).read())
-            response_body = json.dumps(data)
-        else:
-            response_body = ''
+#    elif environ['PATH_INFO'] == '/puzzle.json':
+#        ctype='text/json'
+#        qs = urlparse.parse_qs(environ['QUERY_STRING'])
+#        if 'url' in qs and qs['url']:
+#            data = json.loads(urllib.urlopen(qs['url'][0]).read())
+#            response_body = json.dumps(data)
+#        else:
+#            response_body = ''
     else:
     	ctype = 'text/html'
-        qs = urlparse.parse_qs(environ['QUERY_STRING'])
-        url = ''
-        if 'url' in qs and qs['url']:
-            url = qs['url'][0]
-
-    	response_body = open(
-            os.path.join(
-                os.path.dirname(__file__), 'static', 'index.html'
-            )
-        ).read().replace('puzzle.json', 'puzzle.json?url=%s' % url)
+#        qs = urlparse.parse_qs(environ['QUERY_STRING'])
+#        url = ''
+#        if 'url' in qs and qs['url']:
+#            url = qs['url'][0]
+#
+#    	response_body = open(
+#            os.path.join(
+#                os.path.dirname(__file__), 'static', 'index.html'
+#            )
+#        ).read().replace('puzzle.json', 'puzzle.json?url=%s' % url)
+        response_body = """
+            <html>
+                <head>
+                    <meta http-equiv='refresh'
+          content="0;url='http://crossword.dev.inigo-tech.com/static/puzzle1.html'"/>
+                </head>
+            </html>
+        """)
 
     status = '200 OK'
     response_headers = [
         ('Content-Type', ctype), 
-        ('Content-Length', str(len(response_body)))
+        ('Content-Length', str(len(response_body))),
+        ('Refresh', 
+            '0; http://crossword.dev.inigo-tech.com/static/puzzle1.html')
     ]
     #
     start_response(status, response_headers)
