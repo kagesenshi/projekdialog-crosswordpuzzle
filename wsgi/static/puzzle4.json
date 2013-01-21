@@ -3,64 +3,56 @@
     "startx": 1, 
     "starty": 1, 
     "orientation": "down", 
-    "clue": "Harvest celebration in East Malaysia", 
-    "answer": "gawaidayak", 
-    "position": 1
-  }, 
-  {
-    "startx": 4, 
-    "starty": 2, 
-    "orientation": "down", 
-    "clue": "A Hindu festival celebrated mostly by the Tamil community on January/February", 
-    "answer": "thaipusam", 
-    "position": 2
+    "clue": "1. \"Hello\" (greeting) in Tamil", 
+    "answer": "namaskaram", 
+    "position": 0
   }, 
   {
     "startx": 1, 
-    "starty": 6, 
+    "starty": 5, 
     "orientation": "across", 
-    "clue": "\"Row of lamps\"", 
-    "answer": "deepavali", 
+    "clue": "2. Saving of the soul from the sin and its consequences in Christianity", 
+    "answer": "salvation", 
+    "position": 1
+  }, 
+  {
+    "startx": 5, 
+    "starty": 2, 
+    "orientation": "down", 
+    "clue": "3. The third largest state in Malaysia", 
+    "answer": "pahang", 
+    "position": 2
+  }, 
+  {
+    "startx": 7, 
+    "starty": 2, 
+    "orientation": "down", 
+    "clue": "4. A Hindu festival celebrated mostly by the Tamil community on January/February", 
+    "answer": "thaipusam", 
     "position": 3
   }, 
   {
-    "startx": 3, 
-    "starty": 4, 
-    "orientation": "across", 
-    "clue": "The third largest state in Malaysia", 
-    "answer": "pahang", 
+    "startx": 9, 
+    "starty": 1, 
+    "orientation": "down", 
+    "clue": "5. The longest river in Malaysia", 
+    "answer": "rajang", 
     "position": 4
+  }, 
+  {
+    "startx": 7, 
+    "starty": 3, 
+    "orientation": "across", 
+    "clue": "6. The largest relgularly occuring pilgrimage in the world", 
+    "answer": "hajj", 
+    "position": 5
   }, 
   {
     "startx": 3, 
     "starty": 9, 
     "orientation": "across", 
-    "clue": "Saving of the soul from the sin and its consequences in Christianity", 
-    "answer": "salvation", 
-    "position": 5
-  }, 
-  {
-    "startx": 11, 
-    "starty": 4, 
-    "orientation": "down", 
-    "clue": "A spicy meat dish originated from the Minangkabau ethnic group", 
+    "clue": "7. A spicy meat dish originated from the Minangkabau ethnic group", 
     "answer": "rendang", 
     "position": 6
-  }, 
-  {
-    "startx": 7, 
-    "starty": 8, 
-    "orientation": "down", 
-    "clue": "The largest relgularly occuring pilgrimage in the world", 
-    "answer": "hajj", 
-    "position": 7
-  }, 
-  {
-    "startx": 5, 
-    "starty": 11, 
-    "orientation": "across", 
-    "clue": "The longest river in Malaysia", 
-    "answer": "rajang", 
-    "position": 8
   }
 ]

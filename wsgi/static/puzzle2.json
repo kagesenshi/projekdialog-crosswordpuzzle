@@ -2,73 +2,65 @@
   {
     "startx": 1, 
     "starty": 1, 
-    "orientation": "down", 
-    "clue": "what is the previous name of Johor in Malay (2 words)", 
+    "orientation": "across", 
+    "clue": "1. what is the previous name of Johor in Malay (2 words)", 
     "answer": "ujongtanah", 
+    "position": 0
+  }, 
+  {
+    "startx": 2, 
+    "starty": 4, 
+    "orientation": "down", 
+    "clue": "2. Sticky broiled sago flour, normally complemented with with shrimp paste which is popular in Sarawak", 
+    "answer": "linut", 
     "position": 1
+  }, 
+  {
+    "startx": 6, 
+    "starty": 1, 
+    "orientation": "down", 
+    "clue": "3. How many signs does the Chinese Zodiac have?", 
+    "answer": "twelve", 
+    "position": 2
+  }, 
+  {
+    "startx": 4, 
+    "starty": 3, 
+    "orientation": "across", 
+    "clue": "4. The oldest Taoist temple in Kuala Lumpur (2 words)", 
+    "answer": "szeya", 
+    "position": 3
+  }, 
+  {
+    "startx": 4, 
+    "starty": 3, 
+    "orientation": "down", 
+    "clue": "4. One of the three main category of Orang Asli people", 
+    "answer": "senoi", 
+    "position": 3
   }, 
   {
     "startx": 1, 
     "starty": 6, 
     "orientation": "across", 
-    "clue": "How many signs does the Chinese Zodiac have?", 
-    "answer": "twelve", 
-    "position": 2
-  }, 
-  {
-    "startx": 5, 
-    "starty": 3, 
-    "orientation": "down", 
-    "clue": "This deity is worshipped by large number of Hindu in Malaysia", 
-    "answer": "shiva", 
-    "position": 3
-  }, 
-  {
-    "startx": 3, 
-    "starty": 5, 
-    "orientation": "down", 
-    "clue": "One of the three main category of Orang Asli people", 
-    "answer": "senoi", 
+    "clue": "5. the largest Muslim majority country in the world", 
+    "answer": "indonesia", 
     "position": 4
   }, 
   {
-    "startx": 5, 
-    "starty": 3, 
-    "orientation": "across", 
-    "clue": "The oldest Taoist temple in Kuala Lumpur (2 words)", 
-    "answer": "szeya", 
+    "startx": 9, 
+    "starty": 4, 
+    "orientation": "down", 
+    "clue": "6. The official school of Sunni Islam in Malaysia", 
+    "answer": "shafi'i", 
     "position": 5
   }, 
   {
-    "startx": 9, 
-    "starty": 1, 
-    "orientation": "down", 
-    "clue": "The official school of Sunni Islam in Malaysia", 
-    "answer": "shafi'i", 
-    "position": 6
-  }, 
-  {
-    "startx": 3, 
-    "starty": 9, 
-    "orientation": "across", 
-    "clue": "the largest Muslim majority country in the world", 
-    "answer": "indonesia", 
-    "position": 7
-  }, 
-  {
-    "startx": 11, 
-    "starty": 3, 
-    "orientation": "down", 
-    "clue": "Name of the most famous wet market in Malaysia", 
-    "answer": "khadijah", 
-    "position": 8
-  }, 
-  {
     "startx": 7, 
-    "starty": 7, 
+    "starty": 6, 
     "orientation": "down", 
-    "clue": "Sticky broiled sago flour, normally complemented with with shrimp paste which is popular in Sarawak", 
-    "answer": "linut", 
-    "position": 9
+    "clue": "7. This deity is worshipped by large number of Hindu in Malaysia", 
+    "answer": "shiva", 
+    "position": 6
   }
 ]

@@ -66,8 +66,11 @@
 }
 #puzzle-clues {
     float:left;
-
     width: 50%;
+}
+
+#puzzle-clues ol {
+    list-style:none;
 }
 
 #puzzle-clues li{

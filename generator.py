@@ -308,8 +308,12 @@ class Crossword(object):
         return outStr
 
     def jsondict(self):
+        words = []
         self.order_number_words()
-        words = [w.jsondict() for w in self.current_word_list]
+        for idx, w in enumerate(self.current_word_list):
+            d = w.jsondict()
+#            d['position'] = idx 
+            words.append(d)
         return words
  
 class Word(object):
@@ -335,8 +339,8 @@ class Word(object):
     def jsondict(self):
         return {
             'answer': self.word,
-            'clue': self.clue,
-            'position': self.number,
+            'clue': '%s. %s' % (self.number, self.clue),
+            'position': self.number - 1,
             'orientation': 'down' if self.vertical else 'across',
             'startx': self.col,
             'starty': self.row
@@ -347,56 +351,56 @@ class Word(object):
 #start_full = float(time.time())
 
 # Puzzle 1
-#word_list = (
-#    ['masjidjamek', 'One of the oldest mosques in Kuala Lumpur (2 words)'],
-#    ['raja', 'St. Mary\'s Cathedral is located in which Jalan?'],
-#    ['satay', 'Famous food in Kajang'],
-#    ['bungapakme', 'The name of Rafflesia flower in Malay (2 words)'],
-#    ['penang','Biggest Murugan temple outside of India is located in this city'],
-#    ['nasikerabu','A Malay rice dish'],
-#    ['wau','___ is an intricately designed Malaysian moon-kite'],
-#    ['kelantan','In which state we can find the largest Sitting Buddha in Asia?'],
-#    ['snake','The zodiac for 2013 in Chinese calendar'],
-#    ['tamil','This ethnic includes 75% of Malaysian Indians']
-#)
+word_list_1 = (
+    ['masjidjamek', 'One of the oldest mosques in Kuala Lumpur (2 words)'],
+    ['raja', 'St. Mary\'s Cathedral is located in which Jalan?'],
+    ['satay', 'Famous food in Kajang'],
+    ['bungapakme', 'The name of Rafflesia flower in Malay (2 words)'],
+    ['penang','Biggest Murugan temple outside of India is located in this city'],
+    ['nasikerabu','A Malay rice dish'],
+    ['wau','___ is an intricately designed Malaysian moon-kite'],
+    ['kelantan','In which state we can find the largest Sitting Buddha in Asia?'],
+    ['snake','The zodiac for 2013 in Chinese calendar'],
+    ['tamil','This ethnic includes 75% of Malaysian Indians']
+)
 
 # Puzzle 2
-#word_list = (
-#    ['senoi', 'One of the three main category of Orang Asli people'],
-#    ['twelve', 'How many signs does the Chinese Zodiac have?'],
-#    ['soorapadam', (
-#        'Many of the shrines in Batu Cave relates to the story of '
-#        'Lord Murugan\'s victory over this demon')],
-#    ['shafi\'i', 'The official school of Sunni Islam in Malaysia'],
-#    ['linut', ('Sticky broiled sago flour, normally complemented with with '
-#        'shrimp paste which is popular in Sarawak')],
-#    ['khadijah', 'Name of the most famous wet market in Malaysia'],
-#    ['indonesia', 'the largest Muslim majority country in the world'],
-#    ['ujongtanah', 'what is the previous name of Johor in Malay (2 words)'],
-#    ['shiva', 'This deity is worshipped by large number of Hindu in Malaysia'],
-#    ['szeya', 'The oldest Taoist temple in Kuala Lumpur (2 words)']
-#)
+word_list_2 = (
+    ['senoi', 'One of the three main category of Orang Asli people'],
+    ['twelve', 'How many signs does the Chinese Zodiac have?'],
+    ['soorapadam', (
+        'Many of the shrines in Batu Cave relates to the story of '
+        'Lord Murugan\'s victory over this demon')],
+    ['shafi\'i', 'The official school of Sunni Islam in Malaysia'],
+    ['linut', ('Sticky broiled sago flour, normally complemented with with '
+        'shrimp paste which is popular in Sarawak')],
+    ['khadijah', 'Name of the most famous wet market in Malaysia'],
+    ['indonesia', 'the largest Muslim majority country in the world'],
+    ['ujongtanah', 'what is the previous name of Johor in Malay (2 words)'],
+    ['shiva', 'This deity is worshipped by large number of Hindu in Malaysia'],
+    ['szeya', 'The oldest Taoist temple in Kuala Lumpur (2 words)']
+)
 
 # Puzzle 3
-#word_list = (
-#    ['cow', 'Sacred animal in Hinduism'],
-#    ['rathayatra', (
-#        'A Hindu festival which held usually end of the year, '
-#        'when the deities placed on a chariot which is pulled '
-#        'through the streets by devotees')],
-#    ['baha\'i', ('This religion was introduced to people of Malaya '
-#        'by a Persian couple in 1950 and includes Chinese, Eurasian, '
-#        'Indian and Indigenous communities')],
-#    ['taoteching', 'The keystone work of literature in Taoism (3 words)'],
-#    ['datukkeramat', ('This religious believe in Malaysia is a fusion of '
-#        'pre-Islamic spirit belief, Sufi saint worship and Chinese folk '
-#        'religion (2 words)')],
-#    ['islam', 'One of the fastest growing religions in the world'],
-#    ['wuwei', 'Action through non-action in Taoism (2 words)'],
-#    ['silat', 'Malay local martial art']
-#)
+word_list_3 = (
+    ['cow', 'Sacred animal in Hinduism'],
+    ['rathayatra', (
+        'A Hindu festival which held usually end of the year, '
+        'when the deities placed on a chariot which is pulled '
+        'through the streets by devotees')],
+    ['baha\'i', ('This religion was introduced to people of Malaya '
+        'by a Persian couple in 1950 and includes Chinese, Eurasian, '
+        'Indian and Indigenous communities')],
+    ['taoteching', 'The keystone work of literature in Taoism (3 words)'],
+    ['datukkeramat', ('This religious believe in Malaysia is a fusion of '
+        'pre-Islamic spirit belief, Sufi saint worship and Chinese folk '
+        'religion (2 words)')],
+    ['islam', 'One of the fastest growing religions in the world'],
+    ['wuwei', 'Action through non-action in Taoism (2 words)'],
+    ['silat', 'Malay local martial art']
+)
 
-word_list = (
+word_list_4 = (
     ['thaipusam', ('A Hindu festival celebrated mostly by the Tamil '
         'community on January/February')],
     ['hajj', 'The largest relgularly occuring pilgrimage in the world'],
@@ -412,6 +416,15 @@ word_list = (
         'consequences in Christianity')]
 )
 
-crossword = Crossword(12, 12, ' ', 5000, word_list)
-crossword.compute_crossword(5)
-print json.dumps(crossword.jsondict(), indent=2)
+def generate_crossword(wordlist):
+    size = 0
+    for entry in wordlist:
+        word = entry[0]
+        if len(word) > size:
+            size = len(word)
+    size = size + 1
+    crossword = Crossword(size, size, ' ', 5000, wordlist)
+    crossword.compute_crossword(5)
+    print json.dumps(crossword.jsondict(), indent=2)
+
+generate_crossword(word_list_4)

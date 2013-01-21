@@ -2,49 +2,65 @@
   {
     "startx": 1, 
     "starty": 1, 
+    "orientation": "down", 
+    "clue": "1. This religious believe in Malaysia is a fusion of pre-Islamic spirit belief, Sufi saint worship and Chinese folk religion (2 words)", 
+    "answer": "datukkeramat", 
+    "position": 0
+  }, 
+  {
+    "startx": 1, 
+    "starty": 3, 
     "orientation": "across", 
-    "clue": "A Hindu festival which held usually end of the year, when the deities placed on a chariot which is pulled through the streets by devotees", 
-    "answer": "rathayatra", 
+    "clue": "2. The keystone work of literature in Taoism (3 words)", 
+    "answer": "taoteching", 
     "position": 1
   }, 
   {
     "startx": 3, 
-    "starty": 1, 
+    "starty": 2, 
     "orientation": "down", 
-    "clue": "The keystone work of literature in Taoism (3 words)", 
-    "answer": "taoteching", 
+    "clue": "3. Sacred animal in Hinduism", 
+    "answer": "cow", 
     "position": 2
   }, 
   {
-    "startx": 2, 
-    "starty": 3, 
+    "startx": 1, 
+    "starty": 8, 
     "orientation": "across", 
-    "clue": "Sacred animal in Hinduism", 
-    "answer": "cow", 
+    "clue": "4. A Hindu festival which held usually end of the year, when the deities placed on a chariot which is pulled through the streets by devotees", 
+    "answer": "rathayatra", 
     "position": 3
   }, 
   {
-    "startx": 1, 
+    "startx": 5, 
     "starty": 7, 
-    "orientation": "across", 
-    "clue": "This religion was introduced to people of Malaya by a Persian couple in 1950 and includes Chinese, Eurasian, Indian and Indigenous communities", 
+    "orientation": "down", 
+    "clue": "5. This religion was introduced to people of Malaya by a Persian couple in 1950 and includes Chinese, Eurasian, Indian and Indigenous communities", 
     "answer": "baha'i", 
     "position": 4
   }, 
   {
     "startx": 6, 
-    "starty": 7, 
-    "orientation": "down", 
-    "clue": "One of the fastest growing religions in the world", 
-    "answer": "islam", 
+    "starty": 6, 
+    "orientation": "across", 
+    "clue": "6. Action through non-action in Taoism (2 words)", 
+    "answer": "wuwei", 
     "position": 5
   }, 
   {
-    "startx": 6, 
-    "starty": 8, 
-    "orientation": "across", 
-    "clue": "Malay local martial art", 
+    "startx": 10, 
+    "starty": 5, 
+    "orientation": "down", 
+    "clue": "7. Malay local martial art", 
     "answer": "silat", 
     "position": 6
+  }, 
+  {
+    "startx": 5, 
+    "starty": 12, 
+    "orientation": "across", 
+    "clue": "8. One of the fastest growing religions in the world", 
+    "answer": "islam", 
+    "position": 7
   }
 ]
