@@ -358,6 +358,7 @@ word_list_1 = (
     ['bungapakme', 'The name of Rafflesia flower in Malay (2 words)'],
     ['penang','Biggest Murugan temple outside of India is located in this city'],
     ['nasikerabu','A Malay rice dish'],
+    ['szeya', 'The oldest Taoist temple in Kuala Lumpur (2 words)'],
     ['wau','___ is an intricately designed Malaysian moon-kite'],
     ['kelantan','In which state we can find the largest Sitting Buddha in Asia?'],
     ['snake','The zodiac for 2013 in Chinese calendar'],
@@ -377,7 +378,6 @@ word_list_2 = (
     ['indonesia', 'the largest Muslim majority country in the world'],
     ['ujongtanah', 'what is the previous name of Johor in Malay (2 words)'],
     ['shiva', 'This deity is worshipped by large number of Hindu in Malaysia'],
-    ['szeya', 'The oldest Taoist temple in Kuala Lumpur (2 words)']
 )
 
 # Puzzle 3
@@ -422,12 +422,12 @@ def generate_crossword(wordlist):
         word = entry[0]
         if len(word) > size:
             size = len(word)
-    size = size + 1
+    size = size + 2
     crossword = Crossword(size, size, ' ', 5000, wordlist)
     crossword.compute_crossword(5)
     return json.dumps(crossword.jsondict(), indent=2)
 
-#open('wsgi/static/puzzle1.json', 'w').write(generate_crossword(word_list_1))
-open('wsgi/static/puzzle2.json', 'w').write(generate_crossword(word_list_1))
-open('wsgi/static/puzzle3.json', 'w').write(generate_crossword(word_list_1))
-open('wsgi/static/puzzle4.json', 'w').write(generate_crossword(word_list_1))
+open('wsgi/static/puzzle1.json', 'w').write(generate_crossword(word_list_1))
+#open('wsgi/static/puzzle2.json', 'w').write(generate_crossword(word_list_2))
+#open('wsgi/static/puzzle3.json', 'w').write(generate_crossword(word_list_3))
+#open('wsgi/static/puzzle4.json', 'w').write(generate_crossword(word_list_4))

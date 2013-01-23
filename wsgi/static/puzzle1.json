@@ -2,65 +2,89 @@
   {
     "startx": 1, 
     "starty": 1, 
-    "orientation": "down", 
+    "orientation": "across", 
     "clue": "1. One of the oldest mosques in Kuala Lumpur (2 words)", 
     "answer": "masjidjamek", 
     "position": 0
   }, 
   {
-    "startx": 1, 
-    "starty": 3, 
-    "orientation": "across", 
-    "clue": "2. The zodiac for 2013 in Chinese calendar", 
-    "answer": "snake", 
+    "startx": 3, 
+    "starty": 1, 
+    "orientation": "down", 
+    "clue": "2. The oldest Taoist temple in Kuala Lumpur (2 words)", 
+    "answer": "szeya", 
     "position": 1
   }, 
   {
-    "startx": 3, 
-    "starty": 2, 
+    "startx": 1, 
+    "starty": 3, 
     "orientation": "down", 
-    "clue": "3. ___ is an intricately designed Malaysian moon-kite", 
-    "answer": "wau", 
+    "clue": "3. A Malay rice dish", 
+    "answer": "nasikerabu", 
     "position": 2
   }, 
   {
-    "startx": 5, 
-    "starty": 2, 
-    "orientation": "down", 
-    "clue": "4. Biggest Murugan temple outside of India is located in this city", 
-    "answer": "penang", 
+    "startx": 1, 
+    "starty": 5, 
+    "orientation": "across", 
+    "clue": "4. The zodiac for 2013 in Chinese calendar", 
+    "answer": "snake", 
     "position": 3
   }, 
   {
-    "startx": 4, 
-    "starty": 5, 
+    "startx": 7, 
+    "starty": 3, 
     "orientation": "across", 
-    "clue": "5. Famous food in Kajang", 
-    "answer": "satay", 
+    "clue": "5. This ethnic includes 75% of Malaysian Indians", 
+    "answer": "tamil", 
     "position": 4
   }, 
   {
-    "startx": 3, 
-    "starty": 7, 
+    "startx": 11, 
+    "starty": 1, 
     "orientation": "down", 
-    "clue": "6. This ethnic includes 75% of Malaysian Indians", 
-    "answer": "tamil", 
+    "clue": "6. In which state we can find the largest Sitting Buddha in Asia?", 
+    "answer": "kelantan", 
     "position": 5
+  }, 
+  {
+    "startx": 7, 
+    "starty": 5, 
+    "orientation": "across", 
+    "clue": "7. Biggest Murugan temple outside of India is located in this city", 
+    "answer": "penang", 
+    "position": 6
   }, 
   {
     "startx": 1, 
     "starty": 11, 
     "orientation": "across", 
-    "clue": "7. In which state we can find the largest Sitting Buddha in Asia?", 
-    "answer": "kelantan", 
-    "position": 6
+    "clue": "8. The name of Rafflesia flower in Malay (2 words)", 
+    "answer": "bungapakme", 
+    "position": 7
+  }, 
+  {
+    "startx": 5, 
+    "starty": 8, 
+    "orientation": "down", 
+    "clue": "9. St. Mary's Cathedral is located in which Jalan?", 
+    "answer": "raja", 
+    "position": 8
+  }, 
+  {
+    "startx": 8, 
+    "starty": 7, 
+    "orientation": "across", 
+    "clue": "10. Famous food in Kajang", 
+    "answer": "satay", 
+    "position": 9
   }, 
   {
     "startx": 7, 
-    "starty": 8, 
+    "starty": 10, 
     "orientation": "down", 
-    "clue": "8. St. Mary's Cathedral is located in which Jalan?", 
-    "answer": "raja", 
-    "position": 7
+    "clue": "11. ___ is an intricately designed Malaysian moon-kite", 
+    "answer": "wau", 
+    "position": 10
   }
 ]

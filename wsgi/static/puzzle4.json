@@ -2,65 +2,57 @@
   {
     "startx": 1, 
     "starty": 1, 
-    "orientation": "across", 
-    "clue": "1. One of the oldest mosques in Kuala Lumpur (2 words)", 
-    "answer": "masjidjamek", 
+    "orientation": "down", 
+    "clue": "1. \"Hello\" (greeting) in Tamil", 
+    "answer": "namaskaram", 
     "position": 0
   }, 
   {
-    "startx": 3, 
-    "starty": 1, 
-    "orientation": "down", 
-    "clue": "2. Famous food in Kajang", 
-    "answer": "satay", 
+    "startx": 1, 
+    "starty": 5, 
+    "orientation": "across", 
+    "clue": "2. Saving of the soul from the sin and its consequences in Christianity", 
+    "answer": "salvation", 
     "position": 1
   }, 
   {
-    "startx": 1, 
-    "starty": 4, 
-    "orientation": "across", 
-    "clue": "3. The zodiac for 2013 in Chinese calendar", 
-    "answer": "snake", 
+    "startx": 5, 
+    "starty": 1, 
+    "orientation": "down", 
+    "clue": "3. A spicy meat dish originated from the Minangkabau ethnic group", 
+    "answer": "rendang", 
     "position": 2
   }, 
   {
-    "startx": 5, 
-    "starty": 3, 
+    "startx": 7, 
+    "starty": 2, 
     "orientation": "down", 
-    "clue": "4. Biggest Murugan temple outside of India is located in this city", 
-    "answer": "penang", 
+    "clue": "4. A Hindu festival celebrated mostly by the Tamil community on January/February", 
+    "answer": "thaipusam", 
     "position": 3
+  }, 
+  {
+    "startx": 9, 
+    "starty": 1, 
+    "orientation": "down", 
+    "clue": "5. The longest river in Malaysia", 
+    "answer": "rajang", 
+    "position": 4
   }, 
   {
     "startx": 7, 
     "starty": 3, 
     "orientation": "across", 
-    "clue": "5. This ethnic includes 75% of Malaysian Indians", 
-    "answer": "tamil", 
-    "position": 4
-  }, 
-  {
-    "startx": 11, 
-    "starty": 1, 
-    "orientation": "down", 
-    "clue": "6. In which state we can find the largest Sitting Buddha in Asia?", 
-    "answer": "kelantan", 
+    "clue": "6. The largest relgularly occuring pilgrimage in the world", 
+    "answer": "hajj", 
     "position": 5
   }, 
   {
-    "startx": 8, 
-    "starty": 7, 
+    "startx": 4, 
+    "starty": 9, 
     "orientation": "across", 
-    "clue": "7. St. Mary's Cathedral is located in which Jalan?", 
-    "answer": "raja", 
+    "clue": "7. The third largest state in Malaysia", 
+    "answer": "pahang", 
     "position": 6
-  }, 
-  {
-    "startx": 9, 
-    "starty": 6, 
-    "orientation": "down", 
-    "clue": "8. ___ is an intricately designed Malaysian moon-kite", 
-    "answer": "wau", 
-    "position": 7
   }
 ]
