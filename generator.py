@@ -391,7 +391,7 @@ word_list_3 = (
         'by a Persian couple in 1950 and includes Chinese, Eurasian, '
         'Indian and Indigenous communities')],
     ['taoteching', 'The keystone work of literature in Taoism (3 words)'],
-    ['datukkeramat', ('This religious believe in Malaysia is a fusion of '
+    ['datukkeramat', ('This religious belief in Malaysia is a fusion of '
         'pre-Islamic spirit belief, Sufi saint worship and Chinese folk '
         'religion (2 words)')],
     ['islam', 'One of the fastest growing religions in the world'],
@@ -428,6 +428,6 @@ def generate_crossword(wordlist):
     return json.dumps(crossword.jsondict(), indent=2)
 
 open('wsgi/static/puzzle1.json', 'w').write(generate_crossword(word_list_1))
-#open('wsgi/static/puzzle2.json', 'w').write(generate_crossword(word_list_2))
-#open('wsgi/static/puzzle3.json', 'w').write(generate_crossword(word_list_3))
-#open('wsgi/static/puzzle4.json', 'w').write(generate_crossword(word_list_4))
+open('wsgi/static/puzzle2.json', 'w').write(generate_crossword(word_list_2))
+open('wsgi/static/puzzle3.json', 'w').write(generate_crossword(word_list_3))
+open('wsgi/static/puzzle4.json', 'w').write(generate_crossword(word_list_4))
