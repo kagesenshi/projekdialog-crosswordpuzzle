@@ -265,7 +265,7 @@
 						$groupedLights = $('.entry-' + i);
 						if(!$('.entry-' + i +':eq(0) span').length){
 							$groupedLights.eq(0)
-								.append('<span>' + puzz.data[i].position + '</span>');
+								.append('<span>' + (puzz.data[i - 1].position + 1) + '</span>');
 						}
 					}	
 					

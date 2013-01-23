@@ -361,12 +361,11 @@ word_list_1 = (
     ['wau','___ is an intricately designed Malaysian moon-kite'],
     ['kelantan','In which state we can find the largest Sitting Buddha in Asia?'],
     ['snake','The zodiac for 2013 in Chinese calendar'],
-    ['tamil','This ethnic includes 75% of Malaysian Indians']
+    ['tamil','This ethnic includes 75% of Malaysian Indians'],
 )
 
 # Puzzle 2
 word_list_2 = (
-    ['senoi', 'One of the three main category of Orang Asli people'],
     ['twelve', 'How many signs does the Chinese Zodiac have?'],
     ['soorapadam', (
         'Many of the shrines in Batu Cave relates to the story of '
@@ -413,7 +412,8 @@ word_list_4 = (
     ['rendang', ('A spicy meat dish originated from the Minangkabau '
         'ethnic group')],
     ['salvation', ('Saving of the soul from the sin and its '
-        'consequences in Christianity')]
+        'consequences in Christianity')],
+    ['senoi', 'One of the three main category of Orang Asli people'],
 )
 
 def generate_crossword(wordlist):
@@ -425,6 +425,9 @@ def generate_crossword(wordlist):
     size = size + 1
     crossword = Crossword(size, size, ' ', 5000, wordlist)
     crossword.compute_crossword(5)
-    print json.dumps(crossword.jsondict(), indent=2)
+    return json.dumps(crossword.jsondict(), indent=2)
 
-generate_crossword(word_list_4)
+#open('wsgi/static/puzzle1.json', 'w').write(generate_crossword(word_list_1))
+open('wsgi/static/puzzle2.json', 'w').write(generate_crossword(word_list_1))
+open('wsgi/static/puzzle3.json', 'w').write(generate_crossword(word_list_1))
+open('wsgi/static/puzzle4.json', 'w').write(generate_crossword(word_list_1))
